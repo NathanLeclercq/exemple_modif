@@ -1,0 +1,47 @@
+{
+    "id": 0,
+    "resourcePackages": [
+        {
+            "resourcePackage": {
+                "name": "SharedResources",
+                "type": 2,
+                "items": [
+                    {
+                        "type": 202,
+                        "path": "BaseThemes/CY23SU04.json",
+                        "name": "CY23SU04"
+                    }
+                ],
+                "disabled": false
+            }
+        }
+    ],
+    "sections": [
+        {
+            "id": 0,
+            "name": "ReportSection",
+            "displayName": "Page 1",
+            "filters": "[]",
+            "ordinal": 0,
+            "visualContainers": [
+                {
+                    "x": 9.605521030503024,
+                    "y": 0,
+                    "z": 0,
+                    "width": 699.8308179366489,
+                    "height": 397.94301412083956,
+                    "config": "{\"name\":\"6e8c223a6e81e86360fd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.605521030503024,\"y\":0,\"z\":0,\"width\":699.8308179366489,\"height\":397.94301412083956}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(Sales.Colonne2)\"}],\"Category\":[{\"queryRef\":\"Sales.Colonne1\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Colonne2\"}},\"Function\":0},\"Name\":\"Sum(Sales.Colonne2)\",\"NativeReferenceName\":\"Somme de Colonne2\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Colonne1\"},\"Name\":\"Sales.Colonne1\",\"NativeReferenceName\":\"Colonne1\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Colonne2\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+                    "filters": "[]",
+                    "query": "{\"Commands\":[{\"SemanticQueryDataShapeCommand\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Colonne2\"}},\"Function\":0},\"Name\":\"Sum(Sales.Colonne2)\",\"NativeReferenceName\":\"Somme de Colonne2\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Colonne1\"},\"Name\":\"Sales.Colonne1\",\"NativeReferenceName\":\"Colonne1\"}]},\"Binding\":{\"Primary\":{\"Groupings\":[{\"Projections\":[0,1]}]},\"DataReduction\":{\"DataVolume\":4,\"Primary\":{\"BinnedLineSample\":{}}},\"Version\":1},\"ExecutionMetricsKind\":1}}]}",
+                    "dataTransforms": "{\"projectionOrdering\":{\"Y\":[0],\"Category\":[1]},\"projectionActiveItems\":{\"Category\":[{\"queryRef\":\"Sales.Colonne1\",\"suppressConcat\":false}]},\"queryMetadata\":{\"Select\":[{\"Restatement\":\"Somme de Colonne2\",\"Name\":\"Sum(Sales.Colonne2)\",\"Type\":3,\"Format\":\"0\"},{\"Restatement\":\"Colonne1\",\"Name\":\"Sales.Colonne1\",\"Type\":3,\"Format\":\"0\"}]},\"visualElements\":[{\"DataRoles\":[{\"Name\":\"Y\",\"Projection\":0,\"isActive\":false},{\"Name\":\"Category\",\"Projection\":1,\"isActive\":true}]}],\"selects\":[{\"displayName\":\"Somme de Colonne2\",\"format\":\"0\",\"queryName\":\"Sum(Sales.Colonne2)\",\"roles\":{\"Y\":true},\"type\":{\"category\":null,\"underlyingType\":260},\"expr\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sales\"}},\"Property\":\"Colonne2\"}},\"Function\":0}}},{\"displayName\":\"Colonne1\",\"format\":\"0\",\"queryName\":\"Sales.Colonne1\",\"roles\":{\"Category\":true},\"type\":{\"category\":null,\"underlyingType\":260},\"expr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sales\"}},\"Property\":\"Colonne1\"}}}]}"
+                }
+            ],
+            "config": "{}",
+            "displayOption": 1,
+            "width": 1280,
+            "height": 720
+        }
+    ],
+    "config": "{\"version\":\"5.43\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU04\",\"version\":\"5.43\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+    "layoutOptimization": 0
+}
